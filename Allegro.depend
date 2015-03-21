@@ -1,0 +1,75 @@
+# depslib dependency file v1.0
+1343247345 source:c:\users\david\desktop\allegrp\inicia.cpp
+	"inicia.h"
+	<allegro.h>
+
+1341432202 c:\users\david\desktop\allegrp\inicia.h
+
+1355455235 source:c:\users\david\desktop\allegrp\main.cpp
+	<allegro.h>
+	"inicia.h"
+	"inica2.h"
+
+1355455224 source:c:\users\david\desktop\allegrp\inica2.cpp
+	"inica2.h"
+	<allegro.h>
+
+1355455224 c:\users\david\desktop\allegrp\inica2.h
+
+1343247345 source:c:\users\david\downloads\allegrp\allegrp\inicia.cpp
+	"inicia.h"
+	<allegro.h>
+
+1341432202 c:\users\david\downloads\allegrp\allegrp\inicia.h
+
+1424798590 source:c:\documents and settings\the sorrow\escritorio\templete allegro\allegrp\inicia.cpp
+	"inicia.h"
+	<C:\MinGW\include\allegro\include\allegro.h>
+
+1341435802 c:\documents and settings\the sorrow\escritorio\templete allegro\allegrp\inicia.h
+
+1424827706 source:c:\documents and settings\the sorrow\escritorio\templete allegro\allegrp\main.cpp
+	<C:\MinGW\include\allegro\include\allegro.h>
+	"inicia.h"
+	"inica2.h"
+	<iostream>
+	<stdio.h>
+	<stack>
+	<sstream>
+
+1355455224 c:\documents and settings\the sorrow\escritorio\templete allegro\allegrp\inica2.h
+
+1424968839 source:c:\users\anthony\desktop\templete allegro\allegrp\inicia.cpp
+	"inicia.h"
+	<C:\MinGW\include\allegro\include\allegro.h>
+
+1424968845 c:\users\anthony\desktop\templete allegro\allegrp\inicia.h
+
+1425003270 source:c:\users\anthony\desktop\templete allegro\allegrp\main.cpp
+	<C:\MinGW\include\allegro\include\allegro.h>
+	"inicia.h"
+	"inica2.h"
+	<iostream>
+	<stdio.h>
+	<stack>
+	<sstream>
+
+1355455224 c:\users\anthony\desktop\templete allegro\allegrp\inica2.h
+
+1424968839 source:c:\users\anthony\desktop\allegro proyect\templete allegro\allegrp\inicia.cpp
+	"inicia.h"
+	<C:\MinGW\include\allegro\include\allegro.h>
+
+1424968845 c:\users\anthony\desktop\allegro proyect\templete allegro\allegrp\inicia.h
+
+1426948559 source:c:\users\anthony\desktop\allegro proyect\templete allegro\allegrp\main.cpp
+	<C:\MinGW\include\allegro\include\allegro.h>
+	"inicia.h"
+	"inica2.h"
+	<iostream>
+	<stdio.h>
+	<stack>
+	<sstream>
+
+1355455224 c:\users\anthony\desktop\allegro proyect\templete allegro\allegrp\inica2.h
+
