@@ -18,7 +18,6 @@ public:
         sig = NULL;
     }
 };
-
 class cola
 {
 public:
@@ -121,15 +120,27 @@ int main()
     textout_ex(buffer, font, "Mision: Destroy Enemy Buildings", 17, 40, 0xFFFF00, 0x000000);
     textout_ex(buffer, font, "Target Lock Ready", 17, 55, 0xFFFF00, 0x000000);
     textout_ex(buffer, font, "Bombs are being loaded", 17, 70, 0xFFFF00, 0x000000);
+    draw_sprite(buffer,number0,245,370);
+    draw_sprite(buffer,number0,260,370);
     blit(buffer, screen, 0, 0, 0, 0, 640, 480);
     for(int i = 10; i>0; i--)
     {
         draw_sprite(buffer, ammo, barra, 100);
         blit(buffer, screen, 0, 0, 0, 0, 640, 480);
         barra = barra + 20;
-        rest(500);
+        rest(250);
         stacker.push(i);
+        if(i==2)draw_sprite(buffer,number9,260,370);blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==3)draw_sprite(buffer,number8,260,370);blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==4)draw_sprite(buffer,number7,260,370);blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==5)draw_sprite(buffer,number6,260,370);blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==6)draw_sprite(buffer,number5,260,370);blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==7)draw_sprite(buffer,number4,260,370); blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==8)draw_sprite(buffer,number3,260,370);blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==9)draw_sprite(buffer,number2,260,370);blit(buffer, screen, 0, 0, 0, 0, 640, 480);
+        if(i==10)draw_sprite(buffer,number1,260,370); blit(buffer, screen, 0, 0, 0, 0, 640, 480);
     }
+    blit(buffer, screen, 0, 0, 0, 0, 640, 480);
     textout_ex(buffer, font, "Bombs are Ready, Press 1 to Fire", 17,70, 0xFFFF00, 0x000000);
     draw_sprite(buffer,number0,260,370);
     draw_sprite(buffer,number1,245,370);
@@ -142,7 +153,7 @@ int main()
             {
                 barra = barra-20;
                 draw_sprite(buffer,number0,245,370);
-                draw_sprite(buffer,number9,260,370);
+                draw_sprite(buffer,number1,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 50, 200);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -156,7 +167,7 @@ int main()
             if(key[KEY_1])
             {
                 barra = barra-20;
-                draw_sprite(buffer,number8,260,370);
+                draw_sprite(buffer,number2,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 135,155);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -169,7 +180,7 @@ int main()
             if(key[KEY_1])
             {
                 barra = barra-20;
-                draw_sprite(buffer,number7,260,370);
+                draw_sprite(buffer,number3,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 100,180);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -182,7 +193,7 @@ int main()
             if(key[KEY_1])
             {
                 barra = barra-20;
-                draw_sprite(buffer,number6,260,370);
+                draw_sprite(buffer,number4,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 190,245);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -208,7 +219,7 @@ int main()
             if(key[KEY_1])
             {
                 barra = barra-20;
-                draw_sprite(buffer,number4,260,370);
+                draw_sprite(buffer,number6,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 95,170);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -221,7 +232,7 @@ int main()
             if(key[KEY_1])
             {
                 barra = barra-20;
-                draw_sprite(buffer,number3,260,370);
+                draw_sprite(buffer,number7,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 75,235);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -234,7 +245,7 @@ int main()
             if(key[KEY_1])
             {
                 barra = barra-20;
-                draw_sprite(buffer,number2,260,370);
+                draw_sprite(buffer,number8,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 80,200);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -247,7 +258,7 @@ int main()
             if(key[KEY_1])
             {
                 barra = barra-20;
-                draw_sprite(buffer,number1,260,370);
+                draw_sprite(buffer,number9,260,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 160,190);
                 blit(buffer, screen, 0, 0, 0, 0, 640, 480);
@@ -262,6 +273,7 @@ int main()
                 stacker.pop();
                 barra = barra-20;
                 draw_sprite(buffer,number0,260,370);
+                draw_sprite(buffer,number1,245,370);
                 draw_sprite(buffer, deplete, barra, 100);
                 draw_sprite(buffer, explosion, 199,190);
             }
